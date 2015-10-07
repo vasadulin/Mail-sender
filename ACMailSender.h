@@ -14,13 +14,13 @@ How to use
                         "attachementName"); //file in attach will be named attachementName.jpeg
 
  */
-#ifndef __AmwayCalc__ACMailSender__
-#define __AmwayCalc__ACMailSender__
+#ifndef __ACMailSender__
+#define __ACMailSender__
 
 #include <stdio.h>
 #include "defines.h"
 
-NS_DODOTS_BEGIN
+namespace myNamespace {
 
 class ACMailSender
 {
@@ -32,7 +32,7 @@ public:
                          const char* fnameForUser);
 };
 
-NS_DODOTS_END
+} //namespace myNamespace 
 
 
-#endif /* defined(__AmwayCalc__ACMailSender__) */
+#endif /* defined(__ACMailSender__) */
